@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Netscape</title>
+  <link rel="stylesheet" href="chrome.css">
+</head>
+<body>
+  <div id="toolbar" class="toolbar">
+    <button type="button" id="back" data-icon="TB_Back" title="Return to the previous page in History list">
+      <img alt="" src="../cmd/xfe/icons/images/TB_Back.gif"><span>Back</span>
+    </button>
+    <button type="button" id="forward" data-icon="TB_Forward" title="Go to the next page in History list">
+      <img alt="" src="../cmd/xfe/icons/images/TB_Forward.gif"><span>Forward</span>
+    </button>
+    <button type="button" id="reload" data-icon="TB_Reload" title="Reload">
+      <img alt="" src="../cmd/xfe/icons/images/TB_Reload.gif"><span>Reload</span>
+    </button>
+    <button type="button" id="home" data-icon="TB_Home" title="Home">
+      <img alt="" src="../cmd/xfe/icons/images/TB_Home.gif"><span>Home</span>
+    </button>
+    <button type="button" id="search" data-icon="TB_Search" title="Search">
+      <img alt="" src="../cmd/xfe/icons/images/TB_Search.gif"><span>Search</span>
+    </button>
+    <button type="button" id="guide" data-icon="TB_Places" title="Guide">
+      <img alt="" src="../cmd/xfe/icons/images/TB_Places.gif"><span>Guide</span>
+    </button>
+    <button type="button" id="print" data-icon="TB_Print" title="Print this page">
+      <img alt="" src="../cmd/xfe/icons/images/TB_Print.gif"><span>Print</span>
+    </button>
+    <button type="button" id="stop" data-icon="TB_Stop" title="Stop the current transfer">
+      <img alt="" src="../cmd/xfe/icons/images/TB_Stop.gif"><span>Stop</span>
+    </button>
+    <div id="throbber" title="Netscape">
+      <img id="throbber-img" alt="" src="../cmd/xfe/icons/anim/main/AnimSm00.gif">
+    </div>
+  </div>
+  <form id="location-row">
+    <img id="security" alt="" src="../cmd/xfe/icons/images/TB_Unsecure.gif">
+    <label for="url">Location:</label>
+    <input id="url" type="text" spellcheck="false" autocomplete="off">
+  </form>
+  <div id="directory" class="directory"></div>
+  <div id="content-wrap"></div>
+  <div id="status"></div>
+  <script src="chrome.js"></script>
+</body>
+</html>
